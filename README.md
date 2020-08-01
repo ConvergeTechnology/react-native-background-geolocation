@@ -255,7 +255,7 @@ In `android/app/build.gradle`
 ```gradle
 dependencies {
     ...
-    compile project(':@mauron85_react-native-background-geolocation')
+    compile project(':@mauron85_react-native-background-geolocation') // [!!This isn't ncessary actually]
     ...
 }
 ```
@@ -275,7 +275,7 @@ public class MainApplication extends Application implements ReactApplication {
   protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-          new BackgroundGeolocationPackage() // <---- Add the Package
+          new BackgroundGeolocationPackage() // <---- Add the Package [!!This isn't ncessary actually]
       );
   }
   ...
